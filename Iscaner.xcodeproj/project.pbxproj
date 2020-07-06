@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0744E88D694841EFCCDD7B00 /* Pods_Iscaner_IscanerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A4FB6F77C2E7D98DD43585 /* Pods_Iscaner_IscanerUITests.framework */; };
+		1A4273785FE9167B5B7653A2 /* Pods_IscanerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D836C5C639ED7AF54BB8F /* Pods_IscanerTests.framework */; };
 		2503EB0124AC565F00B78468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503EB0024AC565F00B78468 /* AppDelegate.swift */; };
 		2503EB0324AC565F00B78468 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503EB0224AC565F00B78468 /* SceneDelegate.swift */; };
-		2503EB0524AC565F00B78468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503EB0424AC565F00B78468 /* ViewController.swift */; };
 		2503EB0824AC565F00B78468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2503EB0624AC565F00B78468 /* Main.storyboard */; };
 		2503EB0B24AC565F00B78468 /* Iscaner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2503EB0924AC565F00B78468 /* Iscaner.xcdatamodeld */; };
 		2503EB0D24AC566100B78468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2503EB0C24AC566100B78468 /* Assets.xcassets */; };
 		2503EB1024AC566100B78468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2503EB0E24AC566100B78468 /* LaunchScreen.storyboard */; };
 		2503EB1B24AC566100B78468 /* IscanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503EB1A24AC566100B78468 /* IscanerTests.swift */; };
 		2503EB2624AC566100B78468 /* IscanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2503EB2524AC566100B78468 /* IscanerUITests.swift */; };
+		25BFAE3D24ACE423007D3B70 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFAE3C24ACE423007D3B70 /* MainView.swift */; };
+		25C4EA8324AE35430081C44C /* cameraPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4EA8224AE35430081C44C /* cameraPick.swift */; };
+		90C5A22D24AF1243007A3735 /* About usViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5A22C24AF1243007A3735 /* About usViewController.swift */; };
+		938B0D7820DE958E7769E12F /* Pods_Iscaner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20EB88D2C9EB4892CFFAC57E /* Pods_Iscaner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F7042297C66D7C35B54148 /* Pods-Iscaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner.debug.xcconfig"; path = "Target Support Files/Pods-Iscaner/Pods-Iscaner.debug.xcconfig"; sourceTree = "<group>"; };
+		177B10BD8205B65226065166 /* Pods-IscanerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IscanerTests.debug.xcconfig"; path = "Target Support Files/Pods-IscanerTests/Pods-IscanerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		20EB88D2C9EB4892CFFAC57E /* Pods_Iscaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iscaner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2503EAFD24AC565F00B78468 /* Iscaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iscaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2503EB0024AC565F00B78468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2503EB0224AC565F00B78468 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2503EB0424AC565F00B78468 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2503EB0724AC565F00B78468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2503EB0A24AC565F00B78468 /* Iscaner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Iscaner.xcdatamodel; sourceTree = "<group>"; };
 		2503EB0C24AC566100B78468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,17 @@
 		2503EB2124AC566100B78468 /* IscanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IscanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2503EB2524AC566100B78468 /* IscanerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IscanerUITests.swift; sourceTree = "<group>"; };
 		2503EB2724AC566100B78468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25381D8624ADB985005CBE8D /* WeScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25381D8C24ADC436005CBE8D /* WeScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BFAE3C24ACE423007D3B70 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		25C4EA8224AE35430081C44C /* cameraPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraPick.swift; sourceTree = "<group>"; };
+		44988E4E4D2BEC0E6E3348A1 /* Pods-Iscaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner.release.xcconfig"; path = "Target Support Files/Pods-Iscaner/Pods-Iscaner.release.xcconfig"; sourceTree = "<group>"; };
+		5A63E47AECECC025BBEAD3C8 /* Pods-IscanerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IscanerTests.release.xcconfig"; path = "Target Support Files/Pods-IscanerTests/Pods-IscanerTests.release.xcconfig"; sourceTree = "<group>"; };
+		90C5A22C24AF1243007A3735 /* About usViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "About usViewController.swift"; sourceTree = "<group>"; };
+		BA9D836C5C639ED7AF54BB8F /* Pods_IscanerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IscanerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C307AD534160FA6AC02707 /* Pods-Iscaner-IscanerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner-IscanerUITests.release.xcconfig"; path = "Target Support Files/Pods-Iscaner-IscanerUITests/Pods-Iscaner-IscanerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E51EE3A807B219A539568452 /* Pods-Iscaner-IscanerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner-IscanerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Iscaner-IscanerUITests/Pods-Iscaner-IscanerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4A4FB6F77C2E7D98DD43585 /* Pods_Iscaner_IscanerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iscaner_IscanerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938B0D7820DE958E7769E12F /* Pods_Iscaner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4273785FE9167B5B7653A2 /* Pods_IscanerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0744E88D694841EFCCDD7B00 /* Pods_Iscaner_IscanerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,8 @@
 				2503EB1924AC566100B78468 /* IscanerTests */,
 				2503EB2424AC566100B78468 /* IscanerUITests */,
 				2503EAFE24AC565F00B78468 /* Products */,
+				96ED6FC4CA3BB1B6D03B01FC /* Pods */,
+				C7088410B51336341F8C78C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +124,9 @@
 		2503EAFF24AC565F00B78468 /* Iscaner */ = {
 			isa = PBXGroup;
 			children = (
+				251A8DBF24AC657600E8F113 /* View Controllers */,
 				2503EB0024AC565F00B78468 /* AppDelegate.swift */,
 				2503EB0224AC565F00B78468 /* SceneDelegate.swift */,
-				2503EB0424AC565F00B78468 /* ViewController.swift */,
 				2503EB0624AC565F00B78468 /* Main.storyboard */,
 				2503EB0C24AC566100B78468 /* Assets.xcassets */,
 				2503EB0E24AC566100B78468 /* LaunchScreen.storyboard */,
@@ -131,6 +154,41 @@
 			path = IscanerUITests;
 			sourceTree = "<group>";
 		};
+		251A8DBF24AC657600E8F113 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25BFAE3C24ACE423007D3B70 /* MainView.swift */,
+				25C4EA8224AE35430081C44C /* cameraPick.swift */,
+				90C5A22C24AF1243007A3735 /* About usViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		96ED6FC4CA3BB1B6D03B01FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03F7042297C66D7C35B54148 /* Pods-Iscaner.debug.xcconfig */,
+				44988E4E4D2BEC0E6E3348A1 /* Pods-Iscaner.release.xcconfig */,
+				E51EE3A807B219A539568452 /* Pods-Iscaner-IscanerUITests.debug.xcconfig */,
+				D6C307AD534160FA6AC02707 /* Pods-Iscaner-IscanerUITests.release.xcconfig */,
+				177B10BD8205B65226065166 /* Pods-IscanerTests.debug.xcconfig */,
+				5A63E47AECECC025BBEAD3C8 /* Pods-IscanerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7088410B51336341F8C78C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25381D8C24ADC436005CBE8D /* WeScan.framework */,
+				25381D8624ADB985005CBE8D /* WeScan.framework */,
+				20EB88D2C9EB4892CFFAC57E /* Pods_Iscaner.framework */,
+				F4A4FB6F77C2E7D98DD43585 /* Pods_Iscaner_IscanerUITests.framework */,
+				BA9D836C5C639ED7AF54BB8F /* Pods_IscanerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2503EB2A24AC566100B78468 /* Build configuration list for PBXNativeTarget "Iscaner" */;
 			buildPhases = (
+				A88E3BF596A8C5190E1AAE08 /* [CP] Check Pods Manifest.lock */,
 				2503EAF924AC565F00B78468 /* Sources */,
 				2503EAFA24AC565F00B78468 /* Frameworks */,
 				2503EAFB24AC565F00B78468 /* Resources */,
@@ -155,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2503EB2D24AC566100B78468 /* Build configuration list for PBXNativeTarget "IscanerTests" */;
 			buildPhases = (
+				E7CC5346D8006AD8E893C08B /* [CP] Check Pods Manifest.lock */,
 				2503EB1224AC566100B78468 /* Sources */,
 				2503EB1324AC566100B78468 /* Frameworks */,
 				2503EB1424AC566100B78468 /* Resources */,
@@ -173,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2503EB3024AC566100B78468 /* Build configuration list for PBXNativeTarget "IscanerUITests" */;
 			buildPhases = (
+				967B80BD57B5ACC5A4CA58AE /* [CP] Check Pods Manifest.lock */,
 				2503EB1D24AC566100B78468 /* Sources */,
 				2503EB1E24AC566100B78468 /* Frameworks */,
 				2503EB1F24AC566100B78468 /* Resources */,
@@ -257,13 +318,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		967B80BD57B5ACC5A4CA58AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Iscaner-IscanerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88E3BF596A8C5190E1AAE08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Iscaner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CC5346D8006AD8E893C08B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IscanerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2503EAF924AC565F00B78468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2503EB0524AC565F00B78468 /* ViewController.swift in Sources */,
+				25C4EA8324AE35430081C44C /* cameraPick.swift in Sources */,
+				25BFAE3D24ACE423007D3B70 /* MainView.swift in Sources */,
 				2503EB0B24AC565F00B78468 /* Iscaner.xcdatamodeld in Sources */,
+				90C5A22D24AF1243007A3735 /* About usViewController.swift in Sources */,
 				2503EB0124AC565F00B78468 /* AppDelegate.swift in Sources */,
 				2503EB0324AC565F00B78468 /* SceneDelegate.swift in Sources */,
 			);
@@ -370,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,9 +568,11 @@
 		};
 		2503EB2B24AC566100B78468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F7042297C66D7C35B54148 /* Pods-Iscaner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7V797XKZ;
 				INFOPLIST_FILE = Iscaner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,9 +587,11 @@
 		};
 		2503EB2C24AC566100B78468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44988E4E4D2BEC0E6E3348A1 /* Pods-Iscaner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7V797XKZ;
 				INFOPLIST_FILE = Iscaner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,10 +606,12 @@
 		};
 		2503EB2E24AC566100B78468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177B10BD8205B65226065166 /* Pods-IscanerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7V797XKZ;
 				INFOPLIST_FILE = IscanerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,10 +629,12 @@
 		};
 		2503EB2F24AC566100B78468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A63E47AECECC025BBEAD3C8 /* Pods-IscanerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7V797XKZ;
 				INFOPLIST_FILE = IscanerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,9 +652,11 @@
 		};
 		2503EB3124AC566100B78468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51EE3A807B219A539568452 /* Pods-Iscaner-IscanerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7V797XKZ;
 				INFOPLIST_FILE = IscanerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,9 +673,11 @@
 		};
 		2503EB3224AC566100B78468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C307AD534160FA6AC02707 /* Pods-Iscaner-IscanerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7V797XKZ;
 				INFOPLIST_FILE = IscanerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
