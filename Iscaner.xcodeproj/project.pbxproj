@@ -20,6 +20,7 @@
 		25BFAE3D24ACE423007D3B70 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFAE3C24ACE423007D3B70 /* MainView.swift */; };
 		25C4EA8324AE35430081C44C /* cameraPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4EA8224AE35430081C44C /* cameraPick.swift */; };
 		90C5A22D24AF1243007A3735 /* About usViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5A22C24AF1243007A3735 /* About usViewController.swift */; };
+		90EF29CF24B44F3C00FF6205 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF29CE24B44F3C00FF6205 /* ImageTableViewCell.swift */; };
 		938B0D7820DE958E7769E12F /* Pods_Iscaner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20EB88D2C9EB4892CFFAC57E /* Pods_Iscaner.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		44988E4E4D2BEC0E6E3348A1 /* Pods-Iscaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner.release.xcconfig"; path = "Target Support Files/Pods-Iscaner/Pods-Iscaner.release.xcconfig"; sourceTree = "<group>"; };
 		5A63E47AECECC025BBEAD3C8 /* Pods-IscanerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IscanerTests.release.xcconfig"; path = "Target Support Files/Pods-IscanerTests/Pods-IscanerTests.release.xcconfig"; sourceTree = "<group>"; };
 		90C5A22C24AF1243007A3735 /* About usViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "About usViewController.swift"; sourceTree = "<group>"; };
+		90EF29CE24B44F3C00FF6205 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		BA9D836C5C639ED7AF54BB8F /* Pods_IscanerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IscanerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C307AD534160FA6AC02707 /* Pods-Iscaner-IscanerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner-IscanerUITests.release.xcconfig"; path = "Target Support Files/Pods-Iscaner-IscanerUITests/Pods-Iscaner-IscanerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E51EE3A807B219A539568452 /* Pods-Iscaner-IscanerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iscaner-IscanerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Iscaner-IscanerUITests/Pods-Iscaner-IscanerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		2503EAFF24AC565F00B78468 /* Iscaner */ = {
 			isa = PBXGroup;
 			children = (
+				90EF29CB24B4352D00FF6205 /* Database */,
 				251A8DBF24AC657600E8F113 /* View Controllers */,
 				2503EB0024AC565F00B78468 /* AppDelegate.swift */,
 				2503EB0224AC565F00B78468 /* SceneDelegate.swift */,
@@ -160,8 +163,16 @@
 				25BFAE3C24ACE423007D3B70 /* MainView.swift */,
 				25C4EA8224AE35430081C44C /* cameraPick.swift */,
 				90C5A22C24AF1243007A3735 /* About usViewController.swift */,
+				90EF29CE24B44F3C00FF6205 /* ImageTableViewCell.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		90EF29CB24B4352D00FF6205 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		96ED6FC4CA3BB1B6D03B01FC /* Pods */ = {
@@ -393,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C4EA8324AE35430081C44C /* cameraPick.swift in Sources */,
+				90EF29CF24B44F3C00FF6205 /* ImageTableViewCell.swift in Sources */,
 				25BFAE3D24ACE423007D3B70 /* MainView.swift in Sources */,
 				2503EB0B24AC565F00B78468 /* Iscaner.xcdatamodeld in Sources */,
 				90C5A22D24AF1243007A3735 /* About usViewController.swift in Sources */,

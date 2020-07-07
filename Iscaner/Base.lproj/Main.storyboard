@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VsV-Zi-hHf">
-    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VsV-Zi-hHf">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="nUV-1Q-W6r" customClass="About_usViewController" customModule="Iscaner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ciy-f0-e70">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-us" translatesAutoresizingMaskIntoConstraints="NO" id="jRS-En-hRd">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I-Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rws-sz-i6r">
-                                <rect key="frame" x="20" y="74" width="179" height="46"/>
+                                <rect key="frame" x="16" y="112" width="179" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="8A2-gA-BL9"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made in India with love❤️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-a9-Gfa">
-                                <rect key="frame" x="65" y="1084" width="703" height="28"/>
+                                <rect key="frame" x="65" y="750" width="244" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="mXx-Mg-KQa"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cd-KQ-Zb6">
-                                <rect key="frame" x="16" y="157" width="802" height="70"/>
+                                <rect key="frame" x="16" y="195" width="343" height="162.66666666666663"/>
                                 <string key="text">I-Scanner helps you scan, store, sync and collaborate on various content across smartphones, iPads, tablets and computers. Just use your phone camera to scan and digitize all kinds of paper documents: receipts, notes, invoices, whiteboard discussion, bussiness cards, certificates, etc.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -74,14 +74,14 @@
             <objects>
                 <viewController id="gCU-zk-vOa" customClass="MainView" customModule="Iscaner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6r4-tm-v1Q">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.text" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-Pv-9nA">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="0.33333333333331439" width="375" height="811.66666666666663"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8k-yF-0I4">
-                                <rect key="frame" x="0.0" y="94" width="834" height="44"/>
+                                <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="yzb-EX-z5C"/>
                                 </constraints>
@@ -91,7 +91,7 @@
                                 </items>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFs-Hw-66c">
-                                <rect key="frame" x="0.0" y="1063" width="834" height="49"/>
+                                <rect key="frame" x="0.0" y="729" width="375" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="LOR-5j-Cmc"/>
@@ -109,22 +109,57 @@
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kwW-g8-o6W">
-                                <rect key="frame" x="0.0" y="138" width="834" height="925"/>
+                                <rect key="frame" x="0.0" y="176" width="375" height="553"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="TMv-Fn-Eox">
-                                        <rect key="frame" x="0.0" y="28" width="834" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="127" id="TMv-Fn-Eox" customClass="ImageTableViewCell" customModule="Iscaner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TMv-Fn-Eox" id="NRr-Dy-VWr">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-fX-5Og">
+                                                    <rect key="frame" x="4" y="11" width="105" height="105"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="105" id="XGv-dT-Qzk"/>
+                                                        <constraint firstAttribute="width" constant="105" id="fTt-Kk-b8m"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ7-jd-5c6">
+                                                    <rect key="frame" x="117" y="53" width="243" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="hud-KH-tnw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HJ7-jd-5c6" firstAttribute="leading" secondItem="IHu-fX-5Og" secondAttribute="trailing" constant="8" id="0kq-df-Z5K"/>
+                                                <constraint firstAttribute="trailing" secondItem="IHu-fX-5Og" secondAttribute="trailing" constant="266" id="B3v-O4-jik"/>
+                                                <constraint firstItem="HJ7-jd-5c6" firstAttribute="top" secondItem="NRr-Dy-VWr" secondAttribute="topMargin" constant="42" id="J7i-GM-zvj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HJ7-jd-5c6" secondAttribute="bottom" constant="42" id="T7f-Nw-tuB"/>
+                                                <constraint firstItem="IHu-fX-5Og" firstAttribute="top" secondItem="NRr-Dy-VWr" secondAttribute="top" constant="11" id="hTU-tg-AcY"/>
+                                                <constraint firstItem="HJ7-jd-5c6" firstAttribute="trailing" secondItem="NRr-Dy-VWr" secondAttribute="trailingMargin" id="jiH-zV-FhC"/>
+                                                <constraint firstItem="IHu-fX-5Og" firstAttribute="leading" secondItem="NRr-Dy-VWr" secondAttribute="leading" constant="4" id="lb0-dc-Je4"/>
+                                                <constraint firstAttribute="bottom" secondItem="IHu-fX-5Og" secondAttribute="bottom" constant="11" id="xOD-8W-N6D"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="storedImage" destination="IHu-fX-5Og" id="PtQ-lz-uzD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gCU-zk-vOa" id="3cd-5J-nwt"/>
+                                    <outlet property="delegate" destination="gCU-zk-vOa" id="p7x-Lf-Nny"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Docs (0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-QV-FcN">
-                                <rect key="frame" x="16" y="106" width="121.5" height="21"/>
+                                <rect key="frame" x="16.000000000000007" y="144" width="121.66666666666669" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="YQY-13-CL4"/>
                                 </constraints>
@@ -133,14 +168,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ntu-hx-KxT">
-                                <rect key="frame" x="0.0" y="50" width="834" height="44"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="74W-jH-jkc"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zPT-4x-caT">
-                                <rect key="frame" x="377" y="1005.5" width="80" height="80.5"/>
+                                <rect key="frame" x="147.66666666666666" y="706" width="80" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -184,6 +219,7 @@
                     <navigationItem key="navigationItem" title="I-Scanner" id="biI-Re-Q5a"/>
                     <connections>
                         <outlet property="pickImageButton" destination="zPT-4x-caT" id="efF-aK-4r3"/>
+                        <outlet property="tableView" destination="kwW-g8-o6W" id="wFt-ap-CSU"/>
                         <outlet property="toolbar" destination="cFs-Hw-66c" id="vNj-5S-Y3p"/>
                     </connections>
                 </viewController>
@@ -194,7 +230,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3943.4782608695655" y="-366.96428571428572"/>
+            <point key="canvasLocation" x="3943.1999999999998" y="-367.24137931034483"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qCT-Pv-yRb">
@@ -202,7 +238,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VsV-Zi-hHf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JLu-PA-qIu">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="50"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -217,10 +253,10 @@
     </scenes>
     <resources>
         <image name="about-us" width="1280" height="720"/>
-        <image name="camera.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="checkmark.square.fill" catalog="system" width="64" height="56"/>
-        <image name="doc.text" catalog="system" width="56" height="64"/>
-        <image name="person.fill" catalog="system" width="64" height="60"/>
-        <image name="photo.fill" catalog="system" width="64" height="46"/>
+        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>

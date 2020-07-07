@@ -10,15 +10,23 @@ import UIKit
 import Vision
 import VisionKit
 import PDFKit
+import CoreData
 
 
 class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate, UIGestureRecognizerDelegate,UITabBarDelegate
 {
     
+        let Mainimg: [UIImage] = []
+    
     let pdfDocument = PDFDocument()
     
+    var people: [NSManagedObject] = []
+    
+   // var dbObj: DataBaseHelper!
 
     @IBOutlet weak var photolibrary: UIBarButtonItem!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     @IBAction func photonutton(_ sender: UIBarButtonItem) {
         
@@ -29,7 +37,7 @@ class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerCon
     //MARK: -Outlets
     @IBOutlet weak var pickImageButton: UIImageView!
     
-    @IBOutlet weak var holdingImageView: UIImageView!
+  //  @IBOutlet weak var holdingImageView: UIImageView!
     
     @IBOutlet weak var toolbar: UIToolbar!
     
@@ -40,6 +48,8 @@ class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerCon
     
     var holdImg : UIImage!
     
+    var manageContext: NSManagedObjectContext!
+    var manageObjList: [NSManagedObject]!
     
     //MARK:- viewDidLoad
     override func viewDidLoad() {
@@ -53,7 +63,10 @@ class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerCon
         
         pickImageButton.layer.cornerRadius = self.accessibilityFrame.size.width / 2
         pickImageButton.clipsToBounds = true
-       
+        
+        self.manageContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+            //       ReadData()
         // Do any additional setup after loading the view.
     }
     
@@ -97,14 +110,7 @@ class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerCon
     ///Function for open camera in the app
     func camera()
     {
-//        if UIImagePickerController.isSourceTypeAvailable(.camera)
-//        {
-//            let myPickerController = UIImagePickerController()
-//            myPickerController.delegate = self;
-//            myPickerController.sourceType = .camera
-//            imagePicker.present(myPickerController, animated: true, completion: nil)
-//            print("Camera is open succesfully !!")
-//        }
+//
         if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.camera)) {
             
             imagePicker.sourceType = UIImagePickerController.SourceType.camera
@@ -133,14 +139,7 @@ class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerCon
     func photoLibrary()
     {
         
-//        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary)
-//        {
-//            let myPickerController = UIImagePickerController()
-//            myPickerController.delegate = self;
-//            myPickerController.sourceType = .photoLibrary
-//            present(myPickerController, animated: true, completion: nil)
-//            print("Photo Library is open succesfully !!")
-//        }
+//
         imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
         imagePicker.allowsEditing = true
         imagePicker.modalPresentationStyle = .fullScreen
@@ -159,11 +158,8 @@ class MainView: UIViewController,UINavigationControllerDelegate,UIImagePickerCon
     {
         //to take image in image-view
         holdImg = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
-        holdingImageView.image = holdImg
+     //   holdingImageView.image = holdImg
         
-        
-        
-
         dismiss(animated: true, completion: nil)
     }
        
@@ -191,6 +187,8 @@ extension MainView: VNDocumentCameraViewControllerDelegate
 {
     
     
+ 
+    
     
     private func configDocs()
     {
@@ -203,39 +201,125 @@ extension MainView: VNDocumentCameraViewControllerDelegate
         
         for pageNumber in 0..<scan.pageCount
         {
+            print("print image saved")
             let image = scan.imageOfPage(at: pageNumber)
-            let pdfpage = PDFPage(image: image)
-            pdfDocument.insert(pdfpage!, at: pageNumber)
-            
-            print("Save")
-            
-            let data = pdfDocument.dataRepresentation()
-            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            
-            let docurl = documentDirectory.appendingPathComponent("Scanned.pdf")
-            
-            do {
-                try data?.write(to: docurl)
-                print(docurl)
+           
+            print(image)
+            if let imageData = image.jpegData(compressionQuality: 1.0)
+            {
+                //fari ahiya
                 
-            } catch (let error) {
-                print(error.localizedDescription)
+                let imgData = image.jpegData(compressionQuality: 1.0)!
+                      let imgString64 = imgData.base64EncodedString(options: .lineLength64Characters)
+                    
+                
+                
+                let imBinary = image.pngData()!
+                
+                print(imBinary)
+                
+                self.save(image: imBinary)
+                
+                 let Mainimg2 = UIImage(data: imBinary)!
+                // fari puru
+                
+               // DataBaseHelper.shareInstance.saveImage(data: imageData)
             }
             
-            let pdfview = PDFView()
-            
-            pdfview.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(pdfview)
-            
-        let docU = documentDirectory.appendingPathComponent("Scanned.pdf")
-            
-
-            
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            print("image")
-
+        
+            print("image saved complete")
+            tableView.reloadData()
         }
         controller.dismiss(animated: true, completion: nil)
-        print("Saved")
+       
     }
+    
+    /// ahiya
+
+
+    func save(image:Data) {
+           guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+               return
+           }
+           let managedContext = appDelegate.persistentContainer.viewContext
+           let userEntity = NSEntityDescription.entity(forEntityName: "Image", in: managedContext)!
+           //let cityEntity = NSEntityDescription.entity(forEntityName: "CityTable", in: managedContext)!
+           
+           let person = NSManagedObject(entity: userEntity, insertInto: managedContext)
+           
+       
+           person.setValue(image, forKey: "img")
+           do {
+               try managedContext.save()
+               //people.append(person)
+               print("Saved")
+           } catch let err as NSError {
+               print("Could not save. \(err), \(err.userInfo)")
+           }
+       }
+
+    ///puru
+
+    
+    //
+    
+
+    
+    
+    //
+}
+
+
+
+
+extension MainView: UITableViewDelegate, UITableViewDataSource
+{
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return people.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let person = people[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ImageTableViewCell
+        
+//        cell?.storedImage.image = UIImage(data: people[indexPath].img!)
+        
+        
+        
+        cell?.storedImage.image = person.value(forKey: "img") as? UIImage
+        cell?.storedImage.image = Mainimg as? UIImage
+        return cell!
+    }
+    
+   
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate
+            else{
+                return
+        }
+        let manageContext = appdelegate.persistentContainer.viewContext
+        
+        let fetchReq = NSFetchRequest<NSManagedObject>(entityName: "Image")
+        
+        do
+        {
+            people = try manageContext.fetch(fetchReq)
+        }
+        catch let error as NSError
+        {
+            print("data is not saved \(error),\(error.userInfo)")
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        
+    }
+    
 }
